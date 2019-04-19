@@ -1,14 +1,24 @@
+<?php
+/**
+* Template Name: CAD Homepage
+*
+* @package WordPress
+* @subpackage cad
+* @since cad 0.1
+*/
+?>
+
+
+
 <?php get_header(); ?>
 
-<!-- Breadcrumb -->
-<div class="container">
+<!-- Meta Slider -->
+<?php echo do_shortcode('[metaslider title="New Slideshow"]'); ?>
 
-    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-        <?php if(function_exists('bcn_display'))
-        {
-            bcn_display();
-        }?>
-    </div>
+
+<div class="container">
+<h1> Home page</h1>
+    
 
     <?php 
 

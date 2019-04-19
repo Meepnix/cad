@@ -18,13 +18,39 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+    
+    <div class="container-fluid" style="background-color: #D4E5EF;">
+
+        <div class="row">
+            <div class="col">
+      
+            </div>
+            <div class="col-10">
+
+            <!-- Logo -->
+            <?php 
+            $custom_logo_id = get_theme_mod( 'custom_logo' );
+            $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+            ?>
+
+            
+            <a class="navbar-brand" href="#"><img src="<?php echo $image[0]; ?>" alt=""></a>
+      
+            </div>
+            <div class="col">
+      
+            </div>
+        </div>
+        
+            
+
+            
+        
+    </div>
+
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #004B88;" role="navigation">
             <div class="container">
-                <!-- Logo -->
-                <?php 
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                ?>
+                
 
                 
 
@@ -33,7 +59,7 @@
 		            <span class="navbar-toggler-icon"></span>
 	            </button>
 
-	            <a class="navbar-brand" href="#"><img src="<?php echo $image[0]; ?>" alt=""></a>
+	            
                 <?php
                 wp_nav_menu( array(
                     'theme_location'    => 'primary',
