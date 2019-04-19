@@ -1,5 +1,8 @@
         
         <footer>
+            <div class="container-fluid" style="background-color: #9A1D4E;">
+
+
             <?php
             wp_nav_menu( array(
                 'theme_location'    => 'footer',
@@ -7,11 +10,15 @@
                 'container'         => 'div',
                 'container_class'   => '',
                 'container_id'      => '',
-                'menu_class'        => 'nav justify-content-center',
+                'menu_class'        => 'nav justify-content-center footer',
                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                 'walker'            => new WP_Bootstrap_Navwalker(),
             ) );
 		    ?>
+
+            </nav>
+
+            
 
         </footer>
 

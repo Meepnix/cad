@@ -1,6 +1,13 @@
 <?php get_header(); ?>
-<!-- Meta Slider -->
-<?php echo do_shortcode('[metaslider title="New Slideshow"]'); ?>
+
+
+
+
+
+
+
+
+
         <div class="container-fluid">
             
             <div class="row">

@@ -8,3 +8,7 @@ License: MIT
 License URI: LICENSE
 Tags: cad
 */
+
+ul.footer > li > a {
+    color: #D4E5EF;
+}
