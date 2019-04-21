@@ -9,6 +9,22 @@ License URI: LICENSE
 Tags: cad
 */
 
+div.footer {
+
+    padding-top: 20px;
+
+    color: #D4E5EF;
+}
+
+
+a.footer:link, a.footer:visited {
+
+    color: #D4E5EF;
+
+}
+
 ul.footer > li > a {
     color: #D4E5EF;
 }
+
+

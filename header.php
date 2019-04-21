@@ -10,15 +10,17 @@
 
         <title>Citizens Advice Darlington</title>
 
+        
+
+        
+
+        <?php wp_head();?>
+
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <!-- Theme stylesheet -->
         <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-
-        
-
-        <?php wp_head();?>
     </head>
 
     <body>
