@@ -9,22 +9,91 @@ License URI: LICENSE
 Tags: cad
 */
 
-div.footer {
+h1, h2, h3, h4, h5{
+
+    color: #9A1D4E;
+}
+
+a {
+
+    color: #004B88;
+}
+
+a:hover {
+
+    color: rgb(123, 169, 196);
+}
+
+/* Main Menu */
+
+.social a {
+
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #D4E5EF;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    font-weight: bold;
+    background-color: white;
+    border-color: white;
+    color: #004B88;
+}
+
+/* Footer */
+
+#footer {
 
     padding-top: 20px;
+    color: #D4E5EF;
+}
+
+h1.footer, h2.footer, h3.footer, h4.footer, h5.footer, p.footer, small.footer {
 
     color: #D4E5EF;
+
 }
 
 
 a.footer:link, a.footer:visited {
 
     color: #D4E5EF;
-
 }
 
-ul.footer > li > a {
+a.footer:hover {
+
+    color: white;
+}
+
+ul.footer-menu > li > a:link {
     color: #D4E5EF;
 }
 
+ul.footer-menu > li > a:visited {
+    color: #D4E5EF;
+}
+
+
+ul.footer-menu > li > a::after {
+    content: " | ";
+}
+
+.btn-cad {
+    color: #fff;
+    background-color: #004B88;
+    border-color: #004B88;
+}
+
+.btn-donate {
+    color: #D4E5EF;
+    background-color: #9A1D4E;
+    border-color: #9A1D4E;
+    font-size: 1.10rem;
+}
 
