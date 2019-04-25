@@ -30,53 +30,45 @@
             <div class="col-1">
       
             </div>
-            <div class="col-9">
+            <div class="col-7">
 
-            <!-- Logo -->
-            <?php 
-            $custom_logo_id = get_theme_mod( 'custom_logo' );
-            $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-            ?>
+                <!-- Logo -->
+                <?php 
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                ?>
 
-            
-            <a class="navbar-brand" href="#"><img src="<?php echo $image[0]; ?>" alt=""></a>
+                
+                <a class="navbar-brand" href="#"><img src="<?php echo $image[0]; ?>" alt=""></a>
       
             </div>
-            <div class="col-2">
-                <div class="row">
-                    <div class="col text-center">
+            
+            <div class="col-4">
 
-                        <div class="social">
+                <div class="social">
 
-                        
-                            <a href="http://facebook.com/darlingtoncab" title="Follow us on Facebook." target="_blank">
-                            <i class="fab fa-facebook fa-3x"></i>
-                            </a>
+                    <a href="#" class="btn btn-donate">DONATE</a>
+                    <a href="http://facebook.com/darlingtoncab" title="Follow us on Facebook." target="_blank">
+                    <i class="fab fa-facebook fa-3x"></i>
+                    </a>
 
-                            <a href="http://twitter.com/darlingtoncab" title="Follow us on Twitter." target="_blank">
-                            <i class="fab fa-twitter-square fa-3x"></i>
-                            </a>
+                    <a href="http://twitter.com/darlingtoncab" title="Follow us on Twitter." target="_blank">
+                    <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
 
-                            <a href="https://www.instagram.com/darlingtoncad" title="Follow us on Instagram." target="_blank">
-                            <i class="fab fa-instagram fa-3x"></i>
-                            </a>    
-                        </div>
-                    </div>
+                    <a href="https://www.instagram.com/darlingtoncad" title="Follow us on Instagram." target="_blank">
+                    <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+
+
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                    <a href="#" class="btn btn-donate">DONATE</a> 
-                    </div>
-                </div>
-
-      
+                
+                    
+                
+                
             </div>
         </div>
-        
-            
-
-            
-        
+               
     </div>
 
         <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #004B88;" role="navigation">
