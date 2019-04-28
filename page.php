@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 
 <!-- Breadcrumb -->
-<div class="container">
-
-    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+<div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
         <?php if(function_exists('bcn_display'))
         {
             bcn_display();
         }?>
     </div>
+
+</div>
+<div class="container">
 
     <?php 
 

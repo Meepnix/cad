@@ -19,7 +19,7 @@
 <div class="container">
     <div class="row">
         <div class="col text-center">
-            <h2>Welcome to Citizens Advice Darlington</h2>
+            <h1>Welcome to Citizens Advice Darlington</h1>
             <h5>Citizens Advice Darlington is an independent local charity, run by local people for the benefit of local people.</h5>
             <p>We aim to provide the advice people need for the problems they face and improve the policies and practices that affect people's lives.</p>
 
@@ -28,6 +28,10 @@
             <hr>
         </div>
     </div>
+
+</div>
+
+<div class="container">
 
     <div class="row">
         <div class="col text-center">
@@ -72,19 +76,21 @@
     </div>
     
 
-    <?php 
+</div>
 
-    if ( have_posts() ) : 
-        while ( have_posts() ) : 
-            the_post();
-            the_content();
-        endwhile; 
-    
-    else: 
-    ?>
-    <p>Sorry, no posts matched your criteria.</p>
+<div class="container-fluid" style="background-color: #004B88;">
+    <div class="container">
 
-    <?php endif; ?>
+        <div class="row">
+            <div class="col">
+                    <h2>Volunteer</h2>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        </div>
+    </div>
 
 </div>
 
