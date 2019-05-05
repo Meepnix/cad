@@ -14,13 +14,18 @@
     
     <div class="row">
         <div class="col-9">
+        <h2>News Archive</h2>
+        <hr>
         <?php 
 
             if ( have_posts() ) : 
                 while ( have_posts() ) : 
                     the_post();
-                    echo '<h2>' . get_the_title() . '</h2>';
-                    echo '<p>' .  get_the_date() . 'by <a href="#">' . get_the_author() . '</a></p>';
+                    echo '<div style="margin-bottom: 10px;">';
+                    echo '<h4>' . get_the_title() . '</h4>';
+                    echo '<small style="background-color: #D4E5EF;">' .  get_the_date() . '</small>';
+                    echo '</div>';
+
                     the_content();
                 endwhile; 
 

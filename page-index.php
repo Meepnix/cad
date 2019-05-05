@@ -20,6 +20,14 @@
     <div class="row">
         <div class="col text-center">
             <h1>Welcome to Citizens Advice Darlington</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col text-center">
+            
             <h5>Citizens Advice Darlington is an independent local charity, run by local people for the benefit of local people.</h5>
             <p>We aim to provide the advice people need for the problems they face and improve the policies and practices that affect people's lives.</p>
 
@@ -80,16 +88,31 @@
 
 <div class="container-fluid" style="background-color: #004B88;">
     <div class="container">
+        <div class="row py-4">
+        </div>
+        
 
         <div class="row">
             <div class="col">
-                    <h2>Volunteer</h2>
+                <div class="card" style="background-color: #D4E5EF;">
+                    <div class="card-body">
+                        <h2 class="card-title"> Volunteer opportunities</h2>
+                        <p class="card-text">Volunteers are at the heart of our service helping thousands of residents and workers of Darlington each year, providing them Advice, Information and Advocacy.  We have invested time and resource in ensuring that we are able to offer a wide breadth of volunteer opportunities and career pathways.</p>
+                        <a href="#" class="btn btn-cad">Find out more</a>
+                    </div>
+                </div>
+                    
             </div>
             <div class="col">
 
             </div>
         </div>
+
+        <div class="row py-4">
         </div>
+    </div>
+
+        
     </div>
 
 </div>
