@@ -20,6 +20,11 @@
 
         <!-- Theme stylesheet -->
         <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+
+        <!-- Open Sans stylesheet -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+        
     </head>
 
     <body>
@@ -39,7 +44,7 @@
                 ?>
 
                 
-                <a class="navbar-brand" href="#"><img src="<?php echo $image[0]; ?>" alt=""></a>
+                <a class="navbar-brand" href="#"><img id="logo" src="<?php echo $image[0]; ?>" alt=""></a>
       
             </div>
             

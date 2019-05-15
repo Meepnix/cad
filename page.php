@@ -17,7 +17,8 @@
     if ( have_posts() ) : 
         while ( have_posts() ) : 
             the_post();
-            echo '<h4>' . get_the_title() . '</h4>';
+            echo '<h1>' . get_the_title() . '</h1>';
+            echo '<hr style="border-color: #004B88;">';
             the_content();
         endwhile; 
     

@@ -9,6 +9,64 @@ License URI: LICENSE
 Tags: cad
 */
 
+@media (min-width: 0px) {
+
+    #logo {
+
+        height: 70%;
+        width: 70%;
+
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    /*Meta slider*/
+
+    .metaslider.ms-theme-simply-dark .flexslider ul.slides .caption-wrap .caption, .metaslider.ms-theme-simply-dark .rslides .caption-wrap .caption, .metaslider.ms-theme-simply-dark div.nivoSlider .nivo-caption, .metaslider.ms-theme-simply-dark .cs-title {
+    
+        font-size: 1em;
+        line-height: .6em;
+        
+    }
+
+    #logo {
+
+        height: 70%;
+        width: 70%;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /*Meta slider*/
+
+    .metaslider.ms-theme-simply-dark .flexslider ul.slides .caption-wrap .caption, .metaslider.ms-theme-simply-dark .rslides .caption-wrap .caption, .metaslider.ms-theme-simply-dark div.nivoSlider .nivo-caption, .metaslider.ms-theme-simply-dark .cs-title {
+    
+        font-size: 3em;
+        line-height: 1em;
+    
+    
+    }
+
+    #logo {
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+
+
+}
+
+
+
+
+
 h1, h2, h3, h4, h5{
 
     color: #9A1D4E;
@@ -17,6 +75,11 @@ h1, h2, h3, h4, h5{
 a {
 
     color: #004B88;
+}
+
+hr {
+
+    border-color: #004B88;
 }
 
 a:hover {

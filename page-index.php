@@ -19,11 +19,13 @@
 <div class="container">
     <div class="row">
         <div class="col text-center">
-            <h1>Welcome to Citizens Advice Darlington</h1>
+            <h1 style="margin-top: 25px; margin-bottom: 25px;">Welcome to Citizens Advice Darlington</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col text-center">
+
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/adviser.png" style="width: auto; height: 300px;">
 
         </div>
         <div class="col text-center">
@@ -33,17 +35,18 @@
 
             <p>We provide free, independent, confidential and impartial advice to everyone on their rights and responsibilities. 
             We value diversity, promote equality and challenge discrimination.</p>
-            <hr>
+            
         </div>
     </div>
 
+    <hr>
 </div>
 
 <div class="container">
 
     <div class="row">
         <div class="col text-center">
-            <h2>Latest News</h2>
+            <h2 style="margin-bottom: 25px;">Latest News</h2>
 
 
             <div class="card-deck">
@@ -103,7 +106,9 @@
                 </div>
                     
             </div>
-            <div class="col">
+            <div class="col text-center">
+
+                <img src="<?php bloginfo('template_url'); ?>/assets/images/volunteer.png" style="width: auto; height: 300px;">
 
             </div>
         </div>
