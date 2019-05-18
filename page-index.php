@@ -16,30 +16,36 @@
 <?php echo do_shortcode('[metaslider title="New Slideshow"]'); ?>
 
 
-<div class="container">
-    <div class="row">
-        <div class="col text-center">
-            <h1 style="margin-top: 25px; margin-bottom: 25px;">Welcome to Citizens Advice Darlington</h1>
+<div class="container-fluid" id="banner">
+    <div class="container">
+
+        <div class="row">
+            <div class="col text-center">
+                
+
+                <div class="card" style="background-color: rgba(212,229,239, 0.7); margin-top: 100px; margin-bottom: 90px;">
+                    <div class="card-body">
+
+                        <h2 class="card-text">Citizens Advice Darlington is an independent local charity, run by local people for the benefit of local people.</h2>
+                        
+                        <p class="card-text about">We aim to provide the advice people need for the problems they face and improve the policies and practices that affect people's lives.</p>
+                        <p class="card-text about">We provide free, independent, confidential and impartial advice to everyone on their rights and responsibilities. We value diversity, promote equality and challenge discrimination.</p>
+
+
+
+                        
+                    </div>
+                </div>
+                        
+
+
+
+            </div>
         </div>
+        
+
+        <hr>
     </div>
-    <div class="row">
-        <div class="col text-center">
-
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/adviser.png" style="width: auto; height: 300px;">
-
-        </div>
-        <div class="col text-center">
-            
-            <h5>Citizens Advice Darlington is an independent local charity, run by local people for the benefit of local people.</h5>
-            <p>We aim to provide the advice people need for the problems they face and improve the policies and practices that affect people's lives.</p>
-
-            <p>We provide free, independent, confidential and impartial advice to everyone on their rights and responsibilities. 
-            We value diversity, promote equality and challenge discrimination.</p>
-            
-        </div>
-    </div>
-
-    <hr>
 </div>
 
 <div class="container">
@@ -74,8 +80,8 @@
                 ?>
             </div>
             <br>
-            <a href="#" class="btn btn-cad"><strong>More News</strong></a>
-            <hr>
+            <a href="#" class="btn btn-cad" style="margin-bottom: 20px"><strong>More News</strong></a>
+            
 
         </div>
     </div>
@@ -89,7 +95,7 @@
 
 </div>
 
-<div class="container-fluid" style="background-color: #004B88;">
+<div class="container-fluid" id="vol-banner">
     <div class="container">
         <div class="row py-4">
         </div>
@@ -108,7 +114,7 @@
             </div>
             <div class="col text-center">
 
-                <img src="<?php bloginfo('template_url'); ?>/assets/images/volunteer.png" style="width: auto; height: 300px;">
+                
 
             </div>
         </div>

@@ -9,6 +9,14 @@ License URI: LICENSE
 Tags: cad
 */
 
+/*Meta slider*/
+
+.metaslider .caption-wrap {
+    bottom: 60px;
+}
+
+
+
 @media (min-width: 0px) {
 
     #logo {
@@ -29,7 +37,7 @@ Tags: cad
         font-size: 1em;
         line-height: .6em;
         
-    }
+   }
 
     #logo {
 
@@ -48,8 +56,7 @@ Tags: cad
     
         font-size: 3em;
         line-height: 1em;
-    
-    
+        
     }
 
     #logo {
@@ -64,7 +71,21 @@ Tags: cad
 }
 
 
+/*Index*/
+p.about{
 
+    font-size: 1.2em;
+}
+
+.bg-sky{
+
+    background-color: #D4E5EF;
+}
+
+.bg-plum{
+
+    background-color: #9A1D4E;
+}
 
 
 h1, h2, h3, h4, h5{
@@ -185,6 +206,7 @@ ul.footer-menu > li > a::after {
 }
 
 .btn-donate:hover{
-    color:#fff;background-color:#c82333;border-color:#bd2130
+    color:#fff;background-color:#c82333;border-color:#bd2130;
 }
+
 

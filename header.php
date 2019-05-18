@@ -24,18 +24,32 @@
         <!-- Open Sans stylesheet -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
+        <style>
+            #banner {
+            background-image: url('<?php bloginfo('template_url'); ?>/assets/images/town.jpg');
+            background-size: cover;
+            }
+
+            #vol-banner {
+                background-image: url('<?php bloginfo('template_url'); ?>/assets/images/volunteer_banner.jpg');
+                background-size: cover;
+                
+            }
+        </style>
+
+
         
     </head>
 
     <body>
     
-    <div class="container-fluid" style="background-color: #D4E5EF;">
+    <div class="container-fluid bg-sky">
 
         <div class="row">
             <div class="col-1">
       
             </div>
-            <div class="col-7">
+            <div class="col-6">
 
                 <!-- Logo -->
                 <?php 
@@ -47,12 +61,14 @@
                 <a class="navbar-brand" href="#"><img id="logo" src="<?php echo $image[0]; ?>" alt=""></a>
       
             </div>
+           
             
-            <div class="col-4">
+            <div class="col-5">
 
                 <div class="social">
 
                     <a href="#" class="btn btn-donate">DONATE</a>
+
                     <a href="http://facebook.com/darlingtoncab" title="Follow us on Facebook." target="_blank">
                     <i class="fab fa-facebook fa-3x"></i>
                     </a>
