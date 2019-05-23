@@ -24,16 +24,52 @@
         <!-- Open Sans stylesheet -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
+        <!-- Leafletjs -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+
+        <!-- Cookie Consent -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#3c404d",
+      "text": "#d6d6d6"
+    },
+    "button": {
+      "background": "#8bed4f"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "message": "We only use necessary cookies strictly for the functionality of this website."
+  }
+})});
+</script>
+
+
         <style>
             #banner {
             background-image: url('<?php bloginfo('template_url'); ?>/assets/images/town.jpg');
             background-size: cover;
+            background-position: center bottom;
             }
 
             #vol-banner {
                 background-image: url('<?php bloginfo('template_url'); ?>/assets/images/volunteer_banner.jpg');
                 background-size: cover;
+                background-position: center center;
                 
+            }
+            #map { 
+                
+                height: 350px;
+                width: 100%;
+            
             }
         </style>
 

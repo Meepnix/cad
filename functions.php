@@ -25,4 +25,43 @@ add_theme_support( 'custom-logo', array(
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
 
+// child pages
+
+add_filter('wp_list_pages','wpse241119_replace_class',10,3);
+function wpse241119_replace_class ($output, $r, $pages) {
+	$output = str_replace ('page_item', 'list-group-item', $output);
+	return $output;
+}
+
+
+
+
+function wpb_list_child_pages() { 
+ 
+	global $post; 
+
+	global $post;
+	
+	 
+	if ( is_page() && $post->post_parent ) {
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
+
+	} else {
+		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
+	}
+	 
+	if ( $childpages ) {
+	 
+		$string = '<ul class="list-group list-group-flush">' . $childpages . '</ul>';
+	}
+
+	if ( !isset($string) ) {
+		$string = "";
+	}
+	 
+	echo $string;
+	 
+}
+
+add_shortcode('wpb_childpages', 'wpb_list_child_pages');
 

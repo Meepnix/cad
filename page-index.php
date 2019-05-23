@@ -23,7 +23,7 @@
             <div class="col text-center">
                 
 
-                <div class="card" style="background-color: rgba(212,229,239, 0.7); margin-top: 100px; margin-bottom: 90px;">
+                <div class="card" style="background-color: rgba(212,229,239, 0.7); margin-top: 300px; margin-bottom: 300px;">
                     <div class="card-body">
 
                         <h2 class="card-text">Citizens Advice Darlington is an independent local charity, run by local people for the benefit of local people.</h2>
@@ -52,7 +52,7 @@
 
     <div class="row">
         <div class="col text-center">
-            <h2 style="margin-bottom: 25px;">Latest News</h2>
+            <h2 style="margin-top: 30px; margin-bottom: 40px;">Latest News</h2>
 
 
             <div class="card-deck">

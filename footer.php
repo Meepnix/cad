@@ -76,21 +76,14 @@
 
                         <div class="col footer">
                             <h3 class="footer">Our Location</h3>
-                            <iframe 
-                            frameborder="0" 
-                            height="350" 
-                            scrolling="no" 
-                            src="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Citizens+Advice+Bureau,+Horse+Market,+Darlington&amp;aq=0&amp;oq=darlington+citizensd&amp;sll=52.8382,-2.327815&amp;sspn=10.947951,25.334473&amp;ie=UTF8&amp;hq=Citizens+Advice+Bureau,&amp;hnear=Horse+Market,+Darlington,+United+Kingdom&amp;t=m&amp;cid=9505367898849982330&amp;ll=54.524021,-1.554651&amp;spn=0.014944,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed" 
-                            width="100%"
-                            >
-                            </iframe>
+                            <div id="map"></div>
                             <br>
                             <small class="footer">
                                 <a 
                                 href="http://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Citizens+Advice+Bureau,+Horse+Market,+Darlington&amp;aq=0&amp;oq=darlington+citizensd&amp;sll=52.8382,-2.327815&amp;sspn=10.947951,25.334473&amp;ie=UTF8&amp;hq=Citizens+Advice+Bureau,&amp;hnear=Horse+Market,+Darlington,+United+Kingdom&amp;t=m&amp;cid=9505367898849982330&amp;ll=54.524021,-1.554651&amp;spn=0.014944,0.025749&amp;z=14&amp;iwloc=A"
                                 class="footer"
                                 >
-                                View Larger Map
+                                View Google Map
                                 </a>
                             </small>
 
@@ -145,7 +138,37 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+        
+        
+        <script>
+            //Map
+            var map = L.map('map').setView([54.524661, -1.553609], 14);
 
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([54.524661, -1.553609]).addTo(map)
+                .bindPopup('Citizens Advice Darlington<br>The CORE<br>Church Row<br>Darlington<br>DL1 5QD')
+                .openPopup();
+
+                
+            var maploc = L.map('maploc').setView([54.524661, -1.553609], 14);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(maploc);
+
+            L.marker([54.524661, -1.553609]).addTo(maploc)
+            .bindPopup('Citizens Advice Darlington<br>The CORE<br>Church Row<br>Darlington<br>DL1 5QD')
+            .openPopup();
+
+           
+        
+        </script>
+
+        
         <?php wp_footer(); ?>
 
         <!-- Theme stylesheet -->

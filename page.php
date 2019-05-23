@@ -12,21 +12,34 @@
 </div>
 <div class="container">
 
-    <?php 
+    <div class="row">
+        <div class="col-9">
 
-    if ( have_posts() ) : 
-        while ( have_posts() ) : 
-            the_post();
-            echo '<h1>' . get_the_title() . '</h1>';
-            echo '<hr style="border-color: #004B88;">';
-            the_content();
-        endwhile; 
-    
-    else: 
-    ?>
-    <p>Sorry, no posts matched your criteria.</p>
+            <?php 
 
-    <?php endif; ?>
+            if ( have_posts() ) : 
+                while ( have_posts() ) : 
+                    the_post();
+                    echo '<h1>' . get_the_title() . '</h1>';
+                    echo '<hr style="border-color: #004B88;">';
+                    the_content();
+                endwhile; 
+            
+            else: 
+            ?>
+            <p>Sorry, no posts matched your criteria.</p>
+
+            <?php endif; ?>
+
+        </div>
+        
+        <div class="col-3">
+
+            <?php wpb_list_child_pages(); ?>
+        </div>
+
+
+    </div>
 
 </div>
 
