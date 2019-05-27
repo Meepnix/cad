@@ -33,7 +33,11 @@ function wpse241119_replace_class ($output, $r, $pages) {
 	return $output;
 }
 
+//featured page image
 
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+}
 
 
 function wpb_list_child_pages() { 

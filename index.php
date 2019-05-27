@@ -14,7 +14,7 @@
     
     <div class="row">
         <div class="col-9">
-        <h1>News Archive</h1>
+        <h1>News</h1>
         <hr style="border-color: #004B88;">
         <?php 
 

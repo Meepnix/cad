@@ -70,6 +70,13 @@ Tags: cad
 
 }
 
+/*Page*/
+.page {
+    min-height: 400px;
+    font-size: larger;
+    padding-bottom: 15px;
+}
+
 
 /*Index*/
 p.about{

@@ -59,6 +59,16 @@ window.cookieconsent.initialise({
             background-position: center bottom;
             }
 
+            .page-banner{
+                
+                background-size: cover;
+                
+
+                padding-top: 100px;
+                padding-bottom: 50px
+
+            }
+
             #vol-banner {
                 background-image: url('<?php bloginfo('template_url'); ?>/assets/images/volunteer_banner.jpg');
                 background-size: cover;

@@ -12,8 +12,8 @@
 
 <?php get_header(); ?>
 
-<!-- Meta Slider -->
-<?php echo do_shortcode('[metaslider title="New Slideshow"]'); ?>
+<!-- Meta Slider Main -->
+<?php echo do_shortcode('[metaslider title="Main"]'); ?>
 
 
 <div class="container-fluid" id="banner">
@@ -95,6 +95,9 @@
 
 </div>
 
+<!-- Meta Slider Services -->
+<?php echo do_shortcode('[metaslider title="Services"]'); ?>
+
 <div class="container-fluid" id="vol-banner">
     <div class="container">
         <div class="row py-4">
@@ -106,7 +109,7 @@
                 <div class="card" style="background-color: #D4E5EF;">
                     <div class="card-body">
                         <h2 class="card-title"> Volunteer opportunities</h2>
-                        <p class="card-text">Volunteers are at the heart of our service helping thousands of residents and workers of Darlington each year, providing them Advice, Information and Advocacy.  We have invested time and resource in ensuring that we are able to offer a wide breadth of volunteer opportunities and career pathways.</p>
+                        <p class="card-text about">Volunteers are at the heart of our service helping thousands of residents and workers of Darlington each year, providing them Advice, Information and Advocacy.  We have invested time and resource in ensuring that we are able to offer a wide breadth of volunteer opportunities and career pathways.</p>
                         <a href="#" class="btn btn-cad">Find out more</a>
                     </div>
                 </div>
