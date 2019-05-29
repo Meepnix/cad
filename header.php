@@ -21,6 +21,9 @@
         <!-- Theme stylesheet -->
         <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
+        <!-- Theme Prod stylesheet -->
+        <link href="<?php echo get_bloginfo('template_directory'); ?>/style-290519.css" rel="stylesheet">
+
         <!-- Open Sans stylesheet -->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
@@ -53,34 +56,8 @@ window.cookieconsent.initialise({
 
 
         <style>
-            #banner {
-            background-image: url('<?php bloginfo('template_url'); ?>/assets/images/town.jpg');
-            background-size: cover;
-            background-position: center bottom;
-            }
-
-            .page-banner{
-                
-                background-size: cover;
-                
-
-                padding-top: 100px;
-                padding-bottom: 50px
-
-            }
-
-            #vol-banner {
-                background-image: url('<?php bloginfo('template_url'); ?>/assets/images/volunteer_banner.jpg');
-                background-size: cover;
-                background-position: center center;
-                
-            }
-            #map { 
-                
-                height: 350px;
-                width: 100%;
             
-            }
+           
         </style>
 
 

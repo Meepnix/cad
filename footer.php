@@ -173,6 +173,9 @@
 
         <!-- Theme stylesheet -->
         <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+
+        <!-- Theme Prod stylesheet -->
+        <link href="<?php echo get_bloginfo('template_directory'); ?>/style-290519.css" rel="stylesheet">
     </body>
 
 </html>

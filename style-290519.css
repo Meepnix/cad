@@ -9,6 +9,8 @@ License URI: LICENSE
 Tags: cad
 */
 
+/*PRODUCTION STYLESHEET*/
+
 /*Meta slider*/
 
 .metaslider .caption-wrap {
@@ -273,5 +275,3 @@ ul.footer-menu > li > a::after {
 .btn-donate:hover{
     color:#fff;background-color:#c82333;border-color:#bd2130;
 }
-
-

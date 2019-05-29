@@ -16,43 +16,35 @@
 <?php echo do_shortcode('[metaslider title="Main"]'); ?>
 
 
-<div class="container-fluid" id="banner">
+<div class="container-fluid" id="banner" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/images/town.jpg');">
     <div class="container">
 
         <div class="row">
             <div class="col text-center">
                 
 
-                <div class="card" style="background-color: rgba(212,229,239, 0.7); margin-top: 300px; margin-bottom: 300px;">
+                <div class="card bg-sky-trans" style="margin-top: 300px; margin-bottom: 300px;">
                     <div class="card-body">
 
-                        <h2 class="card-text">Citizens Advice Darlington is an independent local charity, run by local people for the benefit of local people.</h2>
+                        <h2 class="card-text">Darlington Citizens Advice is an independent local charity, run by local people for the benefit of local people.</h2>
                         
                         <p class="card-text about">We aim to provide the advice people need for the problems they face and improve the policies and practices that affect people's lives.</p>
                         <p class="card-text about">We provide free, independent, confidential and impartial advice to everyone on their rights and responsibilities. We value diversity, promote equality and challenge discrimination.</p>
-
-
-
                         
                     </div>
                 </div>
                         
-
-
-
             </div>
         </div>
-        
-
         <hr>
     </div>
 </div>
 
-<div class="container">
+<div class="container section">
 
     <div class="row">
         <div class="col text-center">
-            <h2 style="margin-top: 30px; margin-bottom: 40px;">Latest News</h2>
+            <h2 style="margin-bottom: 40px;">Latest News</h2>
 
 
             <div class="card-deck">
@@ -96,9 +88,19 @@
 </div>
 
 <!-- Meta Slider Services -->
-<?php echo do_shortcode('[metaslider title="Services"]'); ?>
+<div class="container-fluid bg-sky-grad section">
+    <div class="container">
+        <div class="col text-center">
+            <h2 style="margin-bottom: 40px;">Our Services</h2>
+        </div>
+    </div>
+    
 
-<div class="container-fluid" id="vol-banner">
+    <?php echo do_shortcode('[metaslider title="Services"]'); ?>
+
+</div>
+
+<div class="container-fluid section" id="vol-banner" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/images/volunteer_banner.jpg');">
     <div class="container">
         <div class="row py-4">
         </div>
@@ -108,8 +110,8 @@
             <div class="col">
                 <div class="card" style="background-color: #D4E5EF;">
                     <div class="card-body">
-                        <h2 class="card-title"> Volunteer opportunities</h2>
-                        <p class="card-text about">Volunteers are at the heart of our service helping thousands of residents and workers of Darlington each year, providing them Advice, Information and Advocacy.  We have invested time and resource in ensuring that we are able to offer a wide breadth of volunteer opportunities and career pathways.</p>
+                        <h2 class="card-title">Help Us?</h2>
+                        <p class="card-text about">Volunteers are at the heart of our service helping thousands of residents and workers of Darlington each year, providing them Advice, Information and Advocacy. <br> We also welcome a donation or fundraising, any support you can provide will be hugely appreciated and will go towards the continued delivery of our services.</p>
                         <a href="#" class="btn btn-cad">Find out more</a>
                     </div>
                 </div>

@@ -10,14 +10,8 @@
         echo '<div class="container">';
             echo '<div class="row">';
                 echo '<div class="col-9">';
-
-                    echo '<div class="card" style="background-color: rgba(212,229,239, 0.7);">';
-                        echo '<div class="card-body">';
-
-
-                            echo '<h1>' . get_the_title() . '</h1>';
-
-                        echo '</div>';
+                    echo '<div class="title-sky-trans-right">';
+                        echo '<h1>' . get_the_title() . '</h1>';
                     echo '</div>';
                 echo '</div>';
                 echo '<div class="col-3">';
