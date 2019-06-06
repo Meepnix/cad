@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col-9">
         <h1>News</h1>
-        <hr style="border-color: #004B88;">
+        <hr>
         <?php 
 
             if ( have_posts() ) : 
@@ -27,7 +27,7 @@
                     echo '</div>';
 
                     the_content();
-                    echo '<hr>';
+                    echo '<hr style="border-top: 1px solid #343a40;">';
                 endwhile; 
 
             else: 

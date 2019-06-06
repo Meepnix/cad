@@ -23,7 +23,7 @@
             <div class="col text-center">
                 
 
-                <div class="card bg-sky-trans" style="margin-top: 300px; margin-bottom: 300px;">
+                <div class="card bg-sky-trans" style="margin-top: 300px; margin-bottom: 300px;" data-aos="fade-right" data-aos-delay="250" data-aos-easing="ease-out-back">
                     <div class="card-body">
 
                         <h2 class="card-text">Darlington Citizens Advice is an independent local charity, run by local people for the benefit of local people.</h2>
@@ -91,7 +91,7 @@
 <div class="container-fluid bg-sky-grad section">
     <div class="container">
         <div class="col text-center">
-            <h2 style="margin-bottom: 40px;">Our Services</h2>
+            <h2 style="margin-bottom: 40px;">Services</h2>
         </div>
     </div>
     
@@ -108,11 +108,11 @@
 
         <div class="row">
             <div class="col">
-                <div class="card" style="background-color: #D4E5EF;">
+                <div class="card" style="background-color: #D4E5EF;"data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-out-back">
                     <div class="card-body">
                         <h2 class="card-title">Help Us?</h2>
                         <p class="card-text about">Volunteers are at the heart of our service helping thousands of residents and workers of Darlington each year, providing them Advice, Information and Advocacy. <br> We also welcome a donation or fundraising, any support you can provide will be hugely appreciated and will go towards the continued delivery of our services.</p>
-                        <a href="#" class="btn btn-cad">Find out more</a>
+                        <a href="<?php echo get_page_link(219);?>" class="btn btn-cad">Find out more</a>
                     </div>
                 </div>
                     

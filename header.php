@@ -5,11 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Citizens Advice Darlington helps people resolve their legal, money and other problems by providing free, independent and confidential advice, and by influencing policymakers.">
+        <meta name="author" content="Darlington Citizens Advice">
 
-        <title>Citizens Advice Darlington</title>
+        <title>Darlington Citizens Advice</title>
 
+        
+      
         <?php wp_head();?>
 
         <!-- Bootstrap core CSS -->
@@ -32,35 +34,37 @@
 
         <!-- Cookie Consent -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#3c404d",
-      "text": "#d6d6d6"
-    },
-    "button": {
-      "background": "#8bed4f"
-    }
-  },
-  "theme": "edgeless",
-  "content": {
-    "message": "We only use necessary cookies strictly for the functionality of this website."
-  }
-})});
-</script>
+        <?php
+          if (is_front_page()){
+            echo '<!-- AOS -->';
+            echo '<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">';
+}
+
+        ?>
 
 
-        <style>
-            
-           
-        </style>
 
-
+        
+        <script>
+        window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#3c404d",
+              "text": "#d6d6d6"
+            },
+            "button": {
+              "background": "#8bed4f"
+            }
+          },
+          "theme": "edgeless",
+          "content": {
+            "message": "We only use necessary cookies strictly for the functionality of this website."
+          }
+        })});
+        </script>
         
     </head>
 
@@ -81,7 +85,7 @@ window.cookieconsent.initialise({
                 ?>
 
                 
-                <a class="navbar-brand" href="#"><img id="logo" src="<?php echo $image[0]; ?>" alt=""></a>
+                <a class="navbar-brand" href="<?php echo get_home_url();?>"><img id="logo" src="<?php echo $image[0]; ?>" alt=""></a>
       
             </div>
            
@@ -90,7 +94,7 @@ window.cookieconsent.initialise({
 
                 <div class="social">
 
-                    <a href="#" class="btn btn-donate">DONATE</a>
+                    <a href="<?php echo get_page_link(228);?>" class="btn btn-donate">DONATE</a>
 
                     <a href="http://facebook.com/darlingtoncab" title="Follow us on Facebook." target="_blank">
                     <i class="fab fa-facebook fa-3x"></i>

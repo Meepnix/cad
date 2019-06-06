@@ -68,7 +68,7 @@ Tags: cad
 
     }
 
-
+    
 
 }
 
@@ -95,6 +95,13 @@ Tags: cad
     padding: 10px 0px 10px 20px;
     box-shadow: 5px 5px 5px grey;
 }
+
+.nav-pills-dark .nav-link.active, .nav-pills-dark .show>.nav-link {
+    color: #fff;
+    background-color:#343a40;
+}
+
+
 
 
 
@@ -167,12 +174,13 @@ a {
 
 hr {
 
-    border-color: #004B88;
+    border-top: 4px solid #D4E5EF;
 }
 
 a:hover {
 
-    color: rgb(123, 169, 196);
+    color: #004B88;
+
 }
 
 /* Main Menu */
@@ -250,10 +258,6 @@ ul.footer-menu > li > a:visited {
     color: #D4E5EF;
 }
 
-
-ul.footer-menu > li > a::after {
-    content: " | ";
-}
 
 .btn-cad {
     color: #fff;

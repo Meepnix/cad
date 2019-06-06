@@ -17,7 +17,7 @@
                             
                             <h5 class="footer">Our Address</h5>
                             <p class="footer">
-                                Citizens Advice Darlington<br>
+                                Darlington Citizens Advice<br>
                                 The CORE<br>
                                 Church Row<br>
                                 Darlington<br>
@@ -113,8 +113,8 @@
                         <div class="col footer">
                             <p>
                                 <small>
-                                    © Citizens Advice Darlington (CAD) located at The CORE, Church Row, Darlington, DL1 5QD.<br>
-                                    Citizens Advice Darlington is an operating name of Darlington Citizens Advice Bureau<br>
+                                    © Darlington Citizens Advice located at The CORE, Church Row, Darlington, DL1 5QD.<br>
+                                    Darlington Citizens Advice is an operating name of Darlington Citizens Advice Bureau<br>
                                     Company limited by guarantee, Charity Registration No: 1112414, Registered Company Number: 5562437<br>
                                 </small>
                             </p>
@@ -139,6 +139,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+        <?php
+
+            if (is_front_page()){
+                echo '<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>';
+                echo '<script>AOS.init();</script>';
+            }
+
+        ?>
+
         
         
         <script>
@@ -150,7 +160,7 @@
             }).addTo(map);
 
             L.marker([54.524661, -1.553609]).addTo(map)
-                .bindPopup('Citizens Advice Darlington<br>The CORE<br>Church Row<br>Darlington<br>DL1 5QD')
+                .bindPopup('Darlington Citizens Advice<br>The CORE<br>Church Row<br>Darlington<br>DL1 5QD')
                 .openPopup();
 
                 
@@ -161,7 +171,7 @@
             }).addTo(maploc);
 
             L.marker([54.524661, -1.553609]).addTo(maploc)
-            .bindPopup('Citizens Advice Darlington<br>The CORE<br>Church Row<br>Darlington<br>DL1 5QD')
+            .bindPopup('Darlington Citizens Advice<br>The CORE<br>Church Row<br>Darlington<br>DL1 5QD')
             .openPopup();
 
            

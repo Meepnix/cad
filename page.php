@@ -59,7 +59,7 @@
                     if (!get_the_post_thumbnail_url())
                     {
                         echo '<h1>' . get_the_title() . '</h1>';
-                        echo '<hr style="border-color: #004B88;">';
+                        echo '<hr>';
                         
                     }
                     
