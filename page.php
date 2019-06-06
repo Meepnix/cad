@@ -74,8 +74,9 @@
 
         </div>
         
-        <div class="col-3">
-
+        
+        <div class="col-3 bg-sky-grad" style="padding-top: 16px; padding-bottom: 16px">
+            <!-- Child Pages -->
             <?php wpb_list_child_pages(); ?>
         </div>
 

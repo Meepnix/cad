@@ -23,7 +23,7 @@
             <div class="col text-center">
                 
 
-                <div class="card bg-sky-trans" style="margin-top: 300px; margin-bottom: 300px;" data-aos="fade-right" data-aos-delay="250" data-aos-easing="ease-out-back">
+                <div class="card bg-sky-trans" style="margin-top: 300px; margin-bottom: 300px;" data-aos="fade-right" data-aos-delay="150" data-aos-easing="ease-out-back">
                     <div class="card-body">
 
                         <h2 class="card-text">Darlington Citizens Advice is an independent local charity, run by local people for the benefit of local people.</h2>
